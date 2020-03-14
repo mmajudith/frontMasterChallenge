@@ -1,0 +1,426 @@
+/* Desktop and Tablelet size */ 
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'karla';
+}
+
+#wraper{
+    max-width: 1200px;  
+    width:100%;
+    margin: auto auto;
+    background-color: whitesmoke;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.header{
+    width: 90%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+
+}
+ 
+.header a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+h1{
+    font-size: 35px;
+}
+
+label{
+    display: none;
+}
+ #toggle{
+    display: none;
+} 
+
+.last_header_nav_list{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#header-nav li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.first_section{
+    position: relative;
+    height: 360px;
+    color: white;
+    background-image: url(images/milky-way-3602131_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+ 
+#inner-first-section{
+    position: absolute;
+    top: 50px;  
+    left: 70px; 
+    width: 40%; 
+    padding: 30px;
+    border-top: 2px solid white;
+}
+
+#inner-first-section h2{
+    font-size: 40px;
+}
+
+#inner-first-section button{
+    color:white;
+    background-color: inherit;
+    padding: 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.first_section img{
+    position: absolute;
+    right: 120px;
+    top: 60px;  
+    width: 35%; 
+    height: 400px;
+    
+}   
+
+h3{
+    font-size: 42px;
+    margin: 30px;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.three_sections_wrap{
+    width: 90%;
+    margin: auto auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+#symbol, #symbol1, #symbol2{
+    font-size: 30px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
+
+
+h4,h5,h6{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.last_section{
+    position: relative;
+    height: 200px;
+    color:white;
+    width:90%;
+    margin: 50px auto;
+    background-image: url(images/milky-way-3602131_1280.jpg);
+    background-repeat: no-repeat;
+}
+
+.last_section button{
+    position: absolute;
+    right: 100px;
+    top: 70px;
+    color:white;
+    border-color: white;
+    text-transform: uppercase;
+    background-color: inherit;
+    padding: 10px;
+}
+
+.last_section p{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 35px;
+    width: 35%;
+} 
+
+footer{
+    background-color: lavender;
+    width: 100%;
+}
+
+.social_icons{
+    height: 100px;
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: auto auto;
+}
+
+.social_icons p{
+    position: absolute;
+    top: 40px;
+    text-transform: uppercase;
+}
+
+.icons{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    margin: 15px;
+
+}
+
+.footer_nav{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
+    width: 90%;
+    margin: auto auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+}
+.footer_nav p {
+    margin: 10px;
+    margin-bottom: 25px;
+    color: gray;
+    
+}
+.footer_nav li{
+    margin: 10px;
+}
+
+/* Media Query of the small and big Tablet */
+
+@media all and (max-width: 877px){
+    .header{
+        display: block;
+        padding: 30px;
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 42px;
+        padding: 10px;
+    }
+
+    #header-nav{
+        margin: 10px 0px;
+    }
+     
+     .first_section{
+        height: 400px;
+        width: 100%;
+      
+
+    }
+        
+    #inner-first-section{
+        left: 10px; 
+        width: 40%;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    #inner-first-section button{
+        margin-top: 10px;
+
+    }
+
+    .first_section img{
+        right: 40px;
+        top: 60px;
+        width: 40%;
+
+        
+    }  
+
+    .three_sections_wrap{
+        padding: 25px;
+        
+    } 
+
+    .last_section p{
+        top: 40px;
+        font-size: 30px;
+        width: 35%;
+    } 
+}
+    
+@media all and (max-width:580px){
+    #wraper{
+        background-color: white;
+    }
+
+    label{
+        display: block;
+        font-size: 50px;
+        cursor: pointer;
+    }
+
+    .last_header_nav_list{
+        border: none;
+        padding: 0px;
+    }
+    #header-nav li{
+        display: block;
+        border-bottom: 1px solid #EAEAEB; 
+       
+    }
+
+    .open{
+        display: none;
+    }
+
+    #toggle:checked + .open {
+        display: block;
+    }  
+    .first_section{
+        height: 780px ;
+        width: 100%;
+        margin: 0px 0px;
+      
+
+    }
+    
+    .first_section img{
+        right: 0px;
+        top: 0px;
+        width: 100%;
+
+        
+    }
+    #inner-first-section{
+        left: 0px;
+        top: 50%; 
+        width: 80%; 
+        font-size: 16px;
+        margin: 30px 20px; 
+        text-align: center;
+        border-top:none ;
+    
+    }
+
+    #inner-first-section button{
+        margin: 30px;
+        border-color:white ;
+    }  
+
+    h3{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 50px;
+    }
+    
+     .three_sections_wrap{
+        display: block;
+        padding: 30px; 
+        text-align: center;
+        font-size: 16px;
+        width: 80%;
+        margin: auto auto;
+        
+    }
+    
+    #symbol, #symbol1, #symbol2{
+        font-size: 50px;
+        background-color: gray;
+        margin: 30px;
+        border-radius: 100px;
+        
+    }
+
+    h4,h5,h6{
+        font-size: 30px;
+
+    } 
+
+    .last_section{
+        width: 80%;
+        margin: auto auto;
+        height: 300px;
+        
+    }
+
+      .last_section button{
+        position: absolute;
+        left: 35%;
+        top: 80%;
+        color:white;
+        padding: 10px;
+        
+    }
+
+    .last_section p{
+        text-align: center;
+        top: 10%;
+        left: 10%;
+        font-size: 45px;
+        width: 80%;
+        margin-right: 30px;
+    } 
+
+    footer{
+        background-color: white;
+    }
+
+    .social_icons{
+        text-align: center;
+        height: 150px;
+        font-size: 40px;
+        width: 100%;
+        margin: 20px auto; 
+    }
+
+    .social_icons p{
+        width: 100%;
+        margin: auto auto;
+        top: 0px;
+    } 
+    
+    .icons{
+        color: gray;
+        left: 0px;
+        top: 20px;
+        margin: 30px 0px;
+    
+    }
+    .footer_nav{
+        display: block;
+        text-align: center;
+
+    
+    }
+    .footer_nav p {
+        margin: 35px 0px; 
+        color: gray;
+        
+    }
+}
+
+    
